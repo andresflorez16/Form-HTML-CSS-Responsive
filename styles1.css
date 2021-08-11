@@ -5,14 +5,16 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 50px 30px;
-    border: 2px solid #000;
-    border-radius: 10px;
+    border: 5px solid #000;
+    outline: 5px solid #f13;
+    padding: 0 50px;
 }
 .form {
     flex: 1;
     min-width: 400px;
     text-align: center;
-    padding: 30px;
+    padding: 30px 20px;
+    order: 3;
 }
 .form__input {
     width: 100%;
@@ -27,7 +29,7 @@
     color: #ddd;
 }
 .form__input:focus {
-    background-color: #222;
+    background: linear-gradient(to bottom, transparent, #222);
     outline: none;
 }
 #area {
@@ -38,13 +40,22 @@
 .form__img {
     flex: 1;
     display: flex;
-    min-width: 419px;
-    max-width: 600px;
-    padding: 10px;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 10px;
+    padding: 40px;
+    order: 1;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
 }
 .form__img img{
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
-    width: 100%;
+    width: 60%;
     margin: auto;
+}
+
+.form__section input[type="submit"] {
+    background-color: #f13;
+    cursor: pointer;
 }
