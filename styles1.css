@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    background-color: #444;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 30px;
+    border: 2px solid #000;
+    border-radius: 10px;
+
+}
+.form {
+    flex: 1;
+    min-width: 400px;
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.form__input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+#area {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+.form__img {
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    min-width: 419px;
+}
+.form__img img{
+    width: 100%;
+}

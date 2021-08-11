@@ -1,0 +1,50 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+ 
+.container {
+    filter: contrast(30);
+    background-color: #000;
+}
+
+.caja {
+    display: inline-block;
+    margin: 40px;
+    width: 150px;
+    height: 150px;
+    background-color: #f00;
+    border-radius: 50%;
+    filter: blur(20px);
+}
+
+.caja:first-child {
+    animation: mover alternate 1s infinite;
+}
+
+@keyframes mover {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(150px);
+    }
+}
+
+.caja:nth-child(3) {
+    transform: translateX(240px) translateY(50px);
+    animation: mover2 alternate 1s infinite;
+}
+
+
+@keyframes mover2 {
+    0% {
+    }
+
+    100% {
+        transform: translateX(150px) translateY(-200px);
+    }
+}
